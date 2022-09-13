@@ -1,0 +1,38 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'This is Aled'
+theme = "m10c"
+
+[params]
+    author = "Aled Morris"
+    description = "Stuff and things"
+    avatar = "main-headshot-150px.jpg"
+    [[params.social]]
+        icon = "linkedin"
+        name = "LinkedIn"
+        url = "https://www.linkedin.com/in/aledmorris-uc/"
+    [[params.social]]
+        icon = "github"
+        name = "My Github"
+        url = "https://github.com/aledmorris"
+    [[params.social]]
+        icon = "twitter"
+        name = "Twitter"
+        url = "https://twitter.com/feed_cantona"
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 2
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 3

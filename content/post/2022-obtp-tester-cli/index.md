@@ -5,7 +5,7 @@ draft: false
 tags: ["obtp","cisco","python","api","scripting"]
 ---
 
-Have you ever needed a simple tool to push One Button to Push (OBTP) meetings to a Cisco video endpoint like a DX series, for testing purposes? If your answer is 'yes', then you should read on to find out how you can make use of a script that I have written for exactly that purpose.
+Have you ever needed a simple tool to push a One Button to Push (OBTP) meeting to a Cisco video endpoint (like a DX series), for testing purposes? If your answer is **'yes'**, then you should read on to find out how you can make use of a script that I have written for exactly that purpose.
 
 ![Calendar Pop Up](/post/2022-obtp-tester-cli/dx80-popup.png#center50 "Calendar pop up on DX70")
 
@@ -28,7 +28,7 @@ Please take note of the discalimer below:
 
 * Every test booking you make with the tool will overwrite all previous bookings, so please take care not to use this on a production Cisco endpoint, leave it for your lab systems.
 * Script has undergone limited testing, it has worked on a number of endpoints but as a pet project, don't expect it to be perfect.
-* Inspired by the excellent work done by Nick M (acaeti) who has built an excellent OBTP tester: https://github.com/acaeti/OBTP-emulator (go and check his out).
+* Inspired by the excellent work done by Nick M (acaeti) who has built an excellent OBTP tester: https://github.com/acaeti/OBTP-emulator (go and check his repo out).
 
 ## Pre-requisites
 
@@ -89,8 +89,8 @@ python cli.py
 
 **Mac:**
 
-```powershell
-python cli.py
+```shell
+python3 cli.py
 ```
 
 The script should run and you should be presented with the following screen:

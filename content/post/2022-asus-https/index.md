@@ -1,5 +1,5 @@
 ---
-title: "Port Forwarding HTTPS on ASUS router"
+title: "Port Forwarding HTTPS on an ASUS Router"
 date: 2022-10-06T16:10:02+10:00
 draft: false
 tags: ["asus","https","port forwarding"]
@@ -21,9 +21,7 @@ Without these points covered then you are not going to be able to get it to work
 
 ## ASUS Config 
 
-The router was allowing me to add TCP 443 as an entry in the port forwarding section yet would not work still – frustrating!
-
-After some searching I tried one of the suggestions I found online which fixed my issue. My router had the AI Cloud feature included, however, it was not enabled on my device. You will find on one of the config pages that feature is configured to use 443 – this was my problem, a clash even though the feature was not enabled. 
+The router was allowing me to add TCP 443 as an entry in the port forwarding section yet would not work still – frustrating! After some searching I tried one of the suggestions I found online which fixed my issue. My router had the AI Cloud feature included, however, it was not enabled on my device. You will find on one of the config pages that feature is configured to use 443 – this was my problem, a clash even though the feature was not enabled. 
 
 To fix, I changed the AICloud Web Access Port from 443 to something else, I used 9443. After saving my config, it worked like a charm!
 

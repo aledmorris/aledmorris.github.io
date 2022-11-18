@@ -2,7 +2,7 @@
 title: "Monitoring Pexip Infinity with Uptime Kuma Part 1 - Introduction"
 date: 2022-11-17T01:00:00+10:00
 draft: false
-tags: ["Uptime Kuma","Pexip Infinity","Monitoring","Pexip"]
+tags: ["docker","monitoring","pexip"]
 ---
 
 Uptime Kuma is an effective, self-hosted, monitoring tool for services on your network with a very useful notification system. I stumbled upon it when exploring Docker based home lab services and given its feature set thought it could be used to monitor [Pexip](https://www.pexip.com) Infinity deployments quite effectively. In this post (and others) I'll outline some of the specific features which can make it particularly suitable for monitoring Infinity.

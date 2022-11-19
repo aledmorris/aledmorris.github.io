@@ -5,7 +5,7 @@ draft: false
 tags: ["docker","monitoring","pexip","dns"]
 ---
 
-In this part (2) of **Monitoring Pexip Infinity with Uptime Kuma** we will take a look at the DNS monitor type. If you have not yet read part one, [Monitoring Pexip Infinity with Uptime Kuma Part 1 - Introduction]({{< ref "/2022-uptimekuma-pt1/index.md" >}}), then go back and check that out first.
+In this part (2) of **Monitoring Pexip Infinity with Uptime Kuma** we will take a look at the DNS monitor type. If you have not yet read part one, [Monitoring Pexip Infinity with Uptime Kuma Part 1 - Introduction]({{< ref "/post/2022-uptimekuma-pt1/index.md" >}}), then go back and check that out first.
 
 You are able to specify the hostname to check, the DNS record type that you are checking, and the DNS server to use for the lookup. This can be useful for [Pexip](https://www.pexip.com) Infinity as there needs to be DNS A records for all of the nodes and SRV records for each of the calling types being used on the platform. Therefore, Uptime Kuma allows the admin to monitor the existence of DNS records.
 

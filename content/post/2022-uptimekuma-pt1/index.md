@@ -66,3 +66,5 @@ Clicking into a particular monitor you will see a graph representing the request
 ## Next Steps
 
 This post is introductory and shows the most basic of HTTP monitors that can be used, which in itself, can be quite useful. Fututre posts in this series will look at the other monitor types in Uptime Kuma and how they can monitor in unique and powerful ways.
+
+[Monitoring Pexip Infinity with Uptime Kuma Part 2 - DNS Monitoring]({{< ref "/post/2022-uptimekuma-pt2-dns/index.md" >}}), is the next post in this series.

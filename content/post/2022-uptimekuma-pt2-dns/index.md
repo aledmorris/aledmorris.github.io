@@ -34,5 +34,8 @@ Pexip provides a handy online DNS SRV record checker at https://dns.pexip.com wh
 
 ![Pexip DNS Checker](/post/2022-uptimekuma-pt2-dns/dns-pexip-checker.png#center "Pexip DNS Checker")
 
+## Teams Connector A Record
+If your Pexip Infinity deployment is integrated to Microsoft Teams you could add a DNS monitor to cater for any Teams Connectors you have. Using an A record check, point towards the FQDN of each connector in your estate.
+
 ## Conclusion
 DNS monitoring can be useful as another data point to consider when you have problems with your calls and related services. It may be rare for DNS servers to go down, but it can happen, there was a recent example when Cloudflare DNS had an issue and it affected quite significant portion of internet services. What if a DNS admin accidentally deletes some of your Pexip SRV records? Ultimately, it's all about trying to get to the root cause of the problem as quickly as possible.

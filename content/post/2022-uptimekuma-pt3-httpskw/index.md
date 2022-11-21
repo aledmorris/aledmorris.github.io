@@ -1,8 +1,8 @@
 ---
-title: "Monitoring Pexip Infinity with Uptime Kuma Part 3 - HTTPS Keyword Monitoring"
+title: "Monitoring Pexip Infinity with Uptime Kuma Part 3 - HTTP(S) Keyword Monitoring"
 date: 2022-11-20T01:00:00+10:00
 draft: false
-tags: ["docker","monitoring","pexip","https","keyword"]
+tags: ["docker","monitoring","pexip","https","keyword","teams","cvi"]
 ---
 
 In this part (3) of **Monitoring Pexip Infinity with Uptime Kuma** we will take a look at the **HTTP(s) - Keyword** type. If you have not yet read part two, [Monitoring Pexip Infinity with Uptime Kuma Part 2 - DNS Monitoring]({{< ref "/post/2022-uptimekuma-pt2-dns/index.md" >}}), then go back and check that out first.
@@ -11,7 +11,7 @@ The next monitor type to explore **HTTP(s) - Keyword**, this can be used in more
 
 ![Uptime Kuma HTTPS Keyword Monitoring](/post/2022-uptimekuma-pt3-httpskw/https-keyword1.png#center "Uptime Kuma HTTPS Keyword Monitoring")
 
-Using the regular HTTP(s) monitor could be used to monitor a web URL, but what if the web server is up and responding returning a 200 OK, but the web page content is failing to render? This is where the **HTTP(s) - Keyword** type is great as your webpage would have some expected content on it, so you can check for a particular word.
+The regular HTTP(s) monitor could be used to monitor a web URL (see part one is this series of posts), but what if the web server is up and responding returning a `200 OK`, but the web page content is failing to render? This is where the **HTTP(s) - Keyword** type is great as your webpage would have some expected content on it, so you can check for the presence a particular word.
 
 ## Teams Alternative Dialling Information
 When integrated to Microsoft Teams there are CVI specific details added to the Teams Meeting invite, including a link to a webpage, the **Alternative Dialling Instructions**, which shows all the different methods in which you can join the meeting via Pexip.

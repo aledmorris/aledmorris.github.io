@@ -39,3 +39,5 @@ If your Pexip Infinity deployment is integrated to Microsoft Teams you could add
 
 ## Conclusion
 DNS monitoring can be useful as another data point to consider when you have problems with your calls and related services. It may be rare for DNS servers to go down, but it can happen, there was a recent example when Cloudflare DNS had an issue and it affected quite significant portion of internet services. What if a DNS admin accidentally deletes some of your Pexip SRV records? Ultimately, it's all about trying to get to the root cause of the problem as quickly as possible.
+
+The next post in this series is [Monitoring Pexip Infinity with Uptime Kuma Part 3 - HTTP(S) Keyword Monitoring]({{< ref "/post/2022-uptimekuma-pt3-httpskw/index.md" >}}).

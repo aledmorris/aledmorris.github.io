@@ -5,12 +5,12 @@ draft: false
 tags: ["docker","monitoring","pexip","https","post","webrtc"]
 ---
 
-In this part (4) of **Monitoring Pexip Infinity with Uptime Kuma** we will take a look at the **HTTP(s)** monitor type again but using some additional options. If you have not yet read part three, [Monitoring Pexip Infinity with Uptime Kuma Part 3 - HTTP(S) Keyword Monitoring]({{< ref "/post/2022-uptimekuma-pt3-httpskw/index.md" >}}), then go back and check that out first.
+In this part (4) of **Monitoring Pexip Infinity with Uptime Kuma** we will take a look at the **HTTP(S)** monitor type again but using some additional options. If you have not yet read part three, [Monitoring Pexip Infinity with Uptime Kuma Part 3 - HTTP(S) Keyword Monitoring]({{< ref "/post/2022-uptimekuma-pt3-httpskw/index.md" >}}), then go back and check that out first.
 
 A common question which is asked about [Pexip](https://www.pexip.com) Infinity is how to check that a conferencing node is online but also is in a state where it is able to facilitate calls. Uptime Kuma does not have a built in video client so it cannot make test calls for you, although the HTTP(S) monitor can be used with some additional options to check that a node is capable of receiving a WebRTC call.
 
 ## Overview
-The Pexip client REST API can be used to make a HTTPS request to a conference node, the same type request it makes to begin a call via WebRTC, to request a token. The conference node should respond with a `200 OK` and the requested token, indicating the node is up and is ready to take a call. Short of making an actual SIP call then this is the best indicator that a node is available for calls.
+The Pexip client REST API can be used to make a HTTPS request to a conference node, the same type of request it makes to begin a call via WebRTC, to request a token. The conference node should respond with a `200 OK` and the requested token, indicating the node is up and is ready to take a call. Short of making an actual SIP call then this is the best indicator that a node is available for calls.
 
 - The token request is part of the client REST API, details can be found here: https://docs.pexip.com/api_client/api_rest.htm#request_token.
 
@@ -42,11 +42,11 @@ For the monitor to work correctly, we need to set the HTTP method to **POST** an
 
 ![HTTPS Montitor Payload](/post/2022-uptimekuma-pt4-httppost/payload.png#center "HTTPS Montitor Payload")
 
-Save the monitor configuration and you should see a successful probe in Uptime Kuma, then the live view on Pexip will show the test call service.
+Save the monitor configuration and you should see a successful probe in Uptime Kuma, then the live view on Pexip will show the test call service. It will be shown on the live view for 120 seconds before disappearing because of the call timeout.
 
 ![Pexip Infinity Live View](/post/2022-uptimekuma-pt4-httppost/live-view.png#center "Pexip Infinity Live View")
 
 ## Conclusion
 Using the HTTPS monitor in this way is a great way for an admin to have peace of mind that their conferencing nodes are up and are acapable of taking calls. It's a second step beyond just checking that the nodes are online, just because a node is online doesn't necessarily mean that the node can take a call.
 
-Whether you set up a monitor probe for every indiviual conferencing node, or just monitor the URL that users access the webapp with is up to you.
+Whether you set up a monitor probe for every indiviual conferencing node, or just monitor the published URL of the webapp is up to you.

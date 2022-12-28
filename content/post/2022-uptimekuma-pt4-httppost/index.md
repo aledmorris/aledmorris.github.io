@@ -5,7 +5,7 @@ draft: false
 tags: ["docker","monitoring","pexip","https","post","webrtc"]
 ---
 
-In this part (4) of **Monitoring Pexip Infinity with Uptime Kuma** we will take a look at the **HTTP(s)** monitor type again but using some additional options. If you have not yet read part three, [Monitoring Pexip Infinity with Uptime Kuma Part 3 - HTTP(S) Keyword Monitoring]({{< ref "/post/2022-uptimekuma-pt3-httpskm/index.md" >}}), then go back and check that out first.
+In this part (4) of **Monitoring Pexip Infinity with Uptime Kuma** we will take a look at the **HTTP(s)** monitor type again but using some additional options. If you have not yet read part three, [Monitoring Pexip Infinity with Uptime Kuma Part 3 - HTTP(S) Keyword Monitoring]({{< ref "/post/2022-uptimekuma-pt3-httpskw/index.md" >}}), then go back and check that out first.
 
 A common question which is asked about [Pexip](https://www.pexip.com) Infinity is how to check that a conferencing node is online but also is in a state where it is able to facilitate calls. Uptime Kuma does not have a built in video client so it cannot make test calls for you, although the HTTP(S) monitor can be used with some additional options to check that a node is capable of receiving a WebRTC call.
 
